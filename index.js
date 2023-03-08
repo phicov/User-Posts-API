@@ -17,7 +17,7 @@ function showUserPosts(id){
 
 function userHTML(user){
   return `
-    <div class="user" onclick="showUserPosts()">
+    <div class="user" onclick="showUserPosts(${user.id})">
       <div class="user-card">
         <div class="user-card__container">
           <h3>${user.name}</h4>
